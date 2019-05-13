@@ -11,7 +11,7 @@ export default function Step2() {
     console.log("Context: ", FormObject);
     function onClick() {
         FormObject.methods.update({
-            "step1": true
+            "step2": true
         })
     }
 

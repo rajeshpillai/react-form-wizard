@@ -33,9 +33,11 @@ export default function Form() {
                         Form Wizard
                  </h1>
                     <Link to="/form/step1">Step 1</Link>
-                    <Route path='/form/step1' component={Step1} />
-                    <Route path='/form/step2' component={Step2} />
-                    <Route path='/form/step3' component={Step3} />
+                    <div className="router-outlet">
+                        <Route path='/form/step1' component={Step1} />
+                        <Route path='/form/step2' component={Step2} />
+                        <Route path='/form/step3' component={Step3} />
+                    </div>
                 </div>
             </Router>
         </Context.Provider>
