@@ -9,10 +9,9 @@ import Context from '../../context';
 export default function Step2() {
     let FormObject = useContext(Context);
     console.log("Context: ", FormObject);
+
     function onClick() {
-        FormObject.methods.update({
-            "step2": true
-        })
+        FormObject.step2.setState("step2:true");
     }
 
     return (

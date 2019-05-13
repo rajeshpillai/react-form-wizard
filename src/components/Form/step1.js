@@ -10,9 +10,7 @@ export default function Step1() {
     let FormObject = useContext(Context);
     console.log("Context: ", FormObject);
     function onClick() {
-        FormObject.methods.update({
-            "step1": true
-        })
+        FormObject.step1.setState("step1:true");
     }
 
     return (
