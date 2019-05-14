@@ -44,7 +44,7 @@ export default function Form() {
                         <div>{FormObject.step3.value}</div>
 
                     </h1>
-                    <Link to="/form/step1">Step 1</Link>
+                    <Link to="/form/step1">Start</Link>
                     <div className="router-outlet">
                         <Route path='/form/step1' component={Step1} />
                         <Route path='/form/step2' component={Step2} />

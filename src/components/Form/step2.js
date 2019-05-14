@@ -19,7 +19,7 @@ export default function Step2() {
             <h1>
                 Step 2
       </h1>
-            <Link onClick={() => onClick()} to="/form/step3">Step 3</Link>
+            <Link onClick={() => onClick()} to="/form/step3">Goto Step 3</Link>
         </div>
 
     )
