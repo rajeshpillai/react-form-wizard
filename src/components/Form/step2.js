@@ -10,13 +10,14 @@ export default function Step2() {
     let FormObject = useContext(Context);
     console.log("Context: ", FormObject);
 
+    const {setState} = FormObject.current;
+
     function onClick() {
-        FormObject.current.setState("step2");
-        FormObject.step2.setState("step2:true");
+        setState("step2");
     }
 
     useEffect(()=> {
-        FormObject.current.setState("step2");
+        setState("step2");
     },[])
 
 

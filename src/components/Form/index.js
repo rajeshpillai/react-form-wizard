@@ -38,10 +38,6 @@ export default function Form() {
         },
     }
 
-    function onClick() {
-        FormObject.current.setState("step1");
-    }
-
     return (
         <Context.Provider value={FormObject}>
             <Router>
@@ -51,7 +47,7 @@ export default function Form() {
                         <div>{FormObject.current.value}</div>
                     </h1>
                     <h2>Basic fields goes here</h2>
-                    <Link onClick={() => onClick()} to="/form/step1">Start</Link>
+                    <Link to="/form/step1">Start</Link>
                     <div className="router-outlet">
                         <Route path='/form/step1' component={Step1} />
                         <Route path='/form/step2' component={Step2} />

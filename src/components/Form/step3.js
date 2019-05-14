@@ -9,15 +9,15 @@ export default function Step3() {
     let FormObject = useContext(Context);
     console.log("Context: ", FormObject);
 
+    const { setState } = FormObject.current;
+
     function onClick() {
-        FormObject.current.setState("step3");
-        FormObject.step3.setState("step3:true");
+        setState("step3");
     }
 
-
     useEffect(() => {
-        FormObject.current.setState("step3");
-    }, [FormObject])
+        setState("step3");
+    }, [setState])
 
     return (
         <div className="form step">
