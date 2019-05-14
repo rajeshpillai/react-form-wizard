@@ -9,7 +9,7 @@ import {
 
 import Home from './components/home';
 import About from './components/about';
-import Form from './components/Form';
+import Form from './components/form';
 
 class App extends Component {
   render() {
