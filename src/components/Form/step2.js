@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import {
     Link,
 } from 'react-router-dom';
@@ -11,8 +11,14 @@ export default function Step2() {
     console.log("Context: ", FormObject);
 
     function onClick() {
+        FormObject.current.setState("step2");
         FormObject.step2.setState("step2:true");
     }
+
+    useEffect(()=> {
+        FormObject.current.setState("step2");
+    },[])
+
 
     return (
         <div className="form step">
