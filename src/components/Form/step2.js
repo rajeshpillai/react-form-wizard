@@ -15,10 +15,12 @@ export default function Step2() {
     }
 
     return (
-        <div>
+        <div className="form step">
             <h1>
                 Step 2
       </h1>
+            <Link onClick={() => onClick()} to="/form/step1">Back</Link>
+            {"  >"}
             <Link onClick={() => onClick()} to="/form/step3">Goto Step 3</Link>
         </div>
 

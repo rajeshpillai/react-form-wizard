@@ -42,8 +42,8 @@ export default function Form() {
                         <div>{FormObject.step1.value}</div>
                         <div>{FormObject.step2.value}</div>
                         <div>{FormObject.step3.value}</div>
-
                     </h1>
+                    <h2>Basic fields goes here</h2>
                     <Link to="/form/step1">Start</Link>
                     <div className="router-outlet">
                         <Route path='/form/step1' component={Step1} />
@@ -53,6 +53,5 @@ export default function Form() {
                 </div>
             </Router>
         </Context.Provider>
-
     )
 }

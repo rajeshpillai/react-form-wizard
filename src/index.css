@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.form {
+  height: 300px;
+  background-color: rgb(50, 107, 214);
+  color: white;
+}
+
+.step {
+  background-color:rgb(190, 196, 199);
+  color: black;
+}
