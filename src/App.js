@@ -9,15 +9,7 @@ import {
 
 import Home from './components/home';
 import About from './components/about';
-import Context from './context';
-
-
 import Form from './components/Form';
-import Step1 from './components/Form/step1';
-import Step2 from './components/Form/step2';
-import Step3 from './components/Form/step3';
-
-
 
 class App extends Component {
   render() {
