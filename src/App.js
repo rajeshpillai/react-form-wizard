@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <Router>
         <div style={{ width: 1000, margin: '0 auto' }}>
-          <ul>
+          <ul className="menu">
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/form'>Form</Link></li>

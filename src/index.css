@@ -12,8 +12,16 @@ code {
     monospace;
 }
 
+.menu {
+  list-style-type: none;
+}
+.menu li {
+  display: inline-block;
+  padding: 6px;
+}
 .form {
-  height: 300px;
+  padding-left: 6px;
+  height: 200px;
   background-color: rgb(50, 107, 214);
   color: white;
 }
